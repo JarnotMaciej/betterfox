@@ -38,4 +38,5 @@ jobs:
         run: |
           git add user.js
           git commit -m "Update user.js with latest changes and custom modifications"
+          git pull --rebase origin main
           git push origin main
