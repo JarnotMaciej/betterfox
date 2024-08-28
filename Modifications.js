@@ -28,3 +28,8 @@ user_pref("privacy.sanitize.sanitizeOnShutdown", true);
 user_pref("privacy.clearOnShutdown_v2.cache", true); // DEFAULT
 user_pref("privacy.clearOnShutdown_v2.cookiesAndStorage", true); // DEFAULT
 user_pref("privacy.clearOnShutdown_v2.historyFormDataAndDownloads", false);
+
+// Notifications + autoplay
+user_pref("dom.webnotifications.enabled", false); // disable notifications
+user_pref("media.autoplay.default", 5); // block autoplay by default
+user_pref("media.autoplay.allow-muted", false); // block autoplay of muted videos
