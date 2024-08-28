@@ -1,3 +1,4 @@
+
 // PREF: disable Firefox Sync
 user_pref("identity.fxaccounts.enabled", false);
 
