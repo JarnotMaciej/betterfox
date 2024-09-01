@@ -2,7 +2,8 @@ name: Update User JS
 
 on:
   schedule:
-    - cron: '0 0 * * *' # every day at midnight
+    # - cron: '0 0 * * *' # every day at midnight
+    - cron: '0 0 2 * *'  # Monthly on the 1st day of the month at midnight UTC
   workflow_dispatch:
   push:
     paths:
