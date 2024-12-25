@@ -34,3 +34,6 @@ user_pref("privacy.clearOnShutdown_v2.historyFormDataAndDownloads", false);
 user_pref("dom.webnotifications.enabled", false); // disable notifications
 user_pref("media.autoplay.default", 5); // block autoplay by default
 user_pref("media.autoplay.allow-muted", false); // block autoplay of muted videos
+
+// Bookmarks auto backup
+user_pref("browser.bookmarks.autoExportHTML", true);
