@@ -1,0 +1,102 @@
+{
+    "__COMMENT__ More Information": "https://mozilla.github.io/policy-templates/",
+    "policies": {
+        "AppAutoUpdate": true,
+        "AppAutoUpdate_comment": "Change to false to disable auto-updates.",
+        "ExtensionUpdate": true,
+        "DisableFirefoxStudies": true,
+        "DisableTelemetry": true,
+        "DisableFeedbackCommands": true,
+        "DisablePocket": true,
+        "DisableFirefoxAccounts": true,
+        "DisableSetDesktopBackground": true,
+        "DisableDeveloperTools": false,
+        "DisableFormHistory": true,
+        "DisableFirefoxScreenshots": true,
+        "TranslateEnabled": false,
+        "DontCheckDefaultBrowser": true,
+        "DisplayBookmarksToolbar": "newtab",
+        "ManualAppUpdateOnly": false,
+        "ManualAppUpdateOnly_comment": "Change to true to disable auto-updates.",
+        "NoDefaultBookmarks": true,
+        "PopupBlocking": {
+            "Default": true,
+            "Locked": false
+        },
+        "ExtensionSettings": {
+            "*": {
+              "installation_mode": "blocked",
+              "default_area": "navbar",
+              "blocked_install_message": "Installing extensions is disabled by default."
+            },
+            "uBlock0@raymondhill.net": {
+              "installation_mode": "force_installed",
+              "install_url": "https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/latest.xpi"
+            },
+            "{446900e4-71c2-419f-a6a7-df9c091e268b}": {
+              "installation_mode": "force_installed",
+              "install_url": "https://addons.mozilla.org/firefox/downloads/latest/bitwarden-password-manager/latest.xpi"
+            },
+            "plasma-browser-integration@kde.org": {
+              "installation_mode": "allowed"
+            },
+            "chrome-gnome-shell@gnome.org": {
+              "installation_mode": "allowed"
+            },
+            "{e4a8a97b-f2ed-450b-b12d-ee082ba24781}": {
+              "installation_mode": "allowed"
+            },
+            "zotero@chnm.gmu.edu": {
+              "installation_mode": "allowed"
+            },
+            "amazondotcom@search.mozilla.org": {
+              "installation_mode": "blocked"
+            },
+            "ebay@search.mozilla.org": {
+              "installation_mode": "blocked"
+            }
+          },
+        "SearchEngines": {
+            "Remove": [
+                "Amazon.com",
+                "eBay",
+                "Bing",
+                "Google"
+            ],
+            "Add": [
+                {
+                    "Name": "Brave Search",
+                    "URLTemplate": "https://search.brave.com/search?q={searchTerms}",
+                    "Method": "GET",
+                    "Description": "Search the web privately...",
+                    "IconURL": "https://cdn.search.brave.com/serp/v2/_app/immutable/assets/brave-search-icon.CsIFM2aN.svg",
+                    "Alias": "brave"
+                }
+            ]
+        },
+        "FirefoxHome": {
+            "Search": true,
+            "TopSites": false,
+            "SponsoredTopSites": false,
+            "Highlights": false,
+            "Pocket": false,
+            "SponsoredPocket": false,
+            "Snippets": false,
+            "Locked": true
+        },
+        "UserMessaging": {
+            "ExtensionRecommendations": false,
+            "FeatureRecommendations": false,
+            "UrlbarInterventions": false,
+            "SkipOnboarding": true,
+            "MoreFromMozilla": false,
+            "Locked": true
+        },
+        "EnableTrackingProtection": {
+            "Value": true,
+            "Locked": false,
+            "Cryptomining": true,
+            "Fingerprinting": true
+        }
+    }
+}
