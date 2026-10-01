@@ -6,6 +6,7 @@
         "ExtensionUpdate": true,
         "DisableFirefoxStudies": true,
         "DisableTelemetry": true,
+        "DisableRemoteImprovements": true,
         "DisableFeedbackCommands": true,
         "DisablePocket": true,
         "DisableFirefoxAccounts": true,
@@ -17,7 +18,7 @@
         "DontCheckDefaultBrowser": true,
         "DisplayBookmarksToolbar": "newtab",
         "ManualAppUpdateOnly": false,
-        "ManualAppUpdateOnly_comment": "Change to true to disable auto-updates.",
+        "ManualAppUpdateOnly_comment": "Change to true to disable auto-updates",
         "NoDefaultBookmarks": true,
         "PopupBlocking": {
             "Default": true,
